@@ -8,7 +8,7 @@
 	"bin": {
 		"eslint": "./node_modules/.bin/eslint"
 	},
-	"main": "index.js",
+	"main": ".eslintrc.js",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/silverstripe/eslint-config.git"
