@@ -53,7 +53,8 @@ module.exports = {
       'no-unused-vars': [
         'error',
         {
-          'vars': 'local'
+          'vars': 'local',
+          'ignoreRestSiblings': true
         }
       ],
       // increased to error because it's strongly discouraged
@@ -100,7 +101,7 @@ module.exports = {
       ],
       'no-prototype-builtins': [
         'off'
-      ],    
+      ],
     }),
   'settings': {
     'import/extensions': [
