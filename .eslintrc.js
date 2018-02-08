@@ -75,6 +75,10 @@ module.exports = {
       'react/forbid-prop-types': [
         'off'
       ],
+      'react/prefer-stateless-function': [
+        'error',
+        { 'ignorePureComponents': true }
+      ],
       'import/prefer-default-export': [
         'off'
       ],
