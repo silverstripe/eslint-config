@@ -108,6 +108,14 @@ module.exports = {
         'off'
       ],
     }),
+  'overrides': [
+    {
+      "files": ["*-test.js","*-story.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ],
   'settings': {
     'import/extensions': [
       '.js',
