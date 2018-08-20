@@ -34,7 +34,8 @@ const todo = {
 module.exports = {
   'extends': 'airbnb',
   'env': {
-    'jasmine': true
+    'jasmine': true,
+    'browser': true
   },
   'rules': Object.assign({},
     todo,
