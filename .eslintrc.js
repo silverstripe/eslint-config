@@ -34,7 +34,8 @@ const todo = {
 module.exports = {
   'extends': 'airbnb',
   'env': {
-    'jasmine': true
+    'jasmine': true,
+    'browser': true
   },
   'rules': Object.assign({},
     todo,
@@ -107,6 +108,14 @@ module.exports = {
         'off'
       ],
     }),
+  'overrides': [
+    {
+      "files": ["*-test.js","*-story.js"],
+      "rules": {
+        "import/no-extraneous-dependencies": "off"
+      }
+    }
+  ],
   'settings': {
     'import/extensions': [
       '.js',
