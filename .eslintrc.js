@@ -37,6 +37,7 @@ module.exports = {
     'jasmine': true,
     'browser': true
   },
+  'root': true,
   'rules': Object.assign({},
     todo,
     {
