@@ -29,6 +29,7 @@ const todo = {
     // can use refs instead
     'off',
   ],
+
 };
 
 module.exports = {
@@ -107,6 +108,12 @@ module.exports = {
       'no-prototype-builtins': [
         'off'
       ],
+      'import/extensions': [
+        {
+            'ts': 'never',
+            'tsx': 'never'
+        }
+      ],
     }),
   'overrides': [
     {
@@ -119,13 +126,15 @@ module.exports = {
   'settings': {
     'import/extensions': [
       '.js',
-      '.jsx'
+      '.jsx',
     ],
     'import/resolver': {
       'node': {
         'extensions': [
           '.js',
-          '.jsx'
+          '.jsx',
+          '.ts',
+          '.tsx'
         ],
         'moduleDirectory': [
           '.',
