@@ -41,6 +41,15 @@ module.exports = {
   'rules': Object.assign({},
     todo,
     {
+      // turned off otherwise non-admin modules will complain about importing components from admin
+      // via the novel silverstripe js component sharing setup
+      'import/no-extraneous-dependencies': [
+        'off'
+      ],
+      // turned off to allow the using of the js file extension for /boot/index.js
+      'import/extensions': [
+        'off'
+      ],
       // turned off because the PHP side returns dangling properties which trigger this...
       // could revise later and add exceptions for PHP data
       'no-underscore-dangle': [
