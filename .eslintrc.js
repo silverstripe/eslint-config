@@ -46,6 +46,11 @@ module.exports = {
       'import/no-extraneous-dependencies': [
         'off'
       ],
+      // turned off to allow js file extension in require statements
+      // admin bundle.js, vendor.js and others seem to require the file extensions
+      'import/extensions': [
+        'off'
+      ],
       // turned off because the PHP side returns dangling properties which trigger this...
       // could revise later and add exceptions for PHP data
       'no-underscore-dangle': [
