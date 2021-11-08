@@ -46,10 +46,6 @@ module.exports = {
       'import/no-extraneous-dependencies': [
         'off'
       ],
-      // turned off to allow the using of the js file extension for /boot/index.js
-      'import/extensions': [
-        'off'
-      ],
       // turned off because the PHP side returns dangling properties which trigger this...
       // could revise later and add exceptions for PHP data
       'no-underscore-dangle': [
