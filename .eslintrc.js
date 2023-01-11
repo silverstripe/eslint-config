@@ -124,6 +124,12 @@ const todo = {
   'react/jsx-closing-tag-location': [
     'off'
   ],
+  'react/jsx-no-useless-fragment': [
+    'off'
+  ],
+  'react/no-unused-state': [
+    'off'
+  ],
   'react/forbid-foreign-prop-types': [
     'off'
   ],
