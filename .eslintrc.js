@@ -70,6 +70,9 @@ const todo = {
   'import/order': [
     'off'
   ],
+  'import/no-cycle': [
+    'off'
+  ],
   'function-paren-newline': [
     'off'
   ],
@@ -123,7 +126,10 @@ const todo = {
   ],
   'react/forbid-foreign-prop-types': [
     'off'
-  ]
+  ],
+  'react/no-deprecated': [
+    'off'
+  ],
 };
 
 module.exports = {
