@@ -22,9 +22,6 @@ const todo = {
   'arrow-parens': [
     'off'
   ],
-  'indent': [
-    'off'
-  ],
   'react/no-find-dom-node': [
     // can use refs instead
     'off',
@@ -32,20 +29,14 @@ const todo = {
   'react/default-props-match-prop-types': [
     'off'
   ],
-  'react/no-access-state-in-setstate': [
-    'off'
-  ],
   'default-param-last': [
-    'off'
-  ],
-  'max-classes-per-file': [
     'off'
   ],
   'no-param-reassign': [
     'off'
   ],
   'no-unused-vars': [
-    'off',
+    'error',
     {
       'vars': 'local',
       'ignoreRestSiblings': true
@@ -54,32 +45,16 @@ const todo = {
   'implicit-arrow-linebreak': [
     'off'
   ],
-  'no-param-reassign': [
-    'off'
-  ],
   'no-redeclare': [
     'off'
   ],
   'no-restricted-globals': [
     'off'
   ],
-  'no-dupe-keys': [
-    'off'
-  ],
-  // the following can be automatically fixed via the --fix option
-  'import/order': [
-    'off'
-  ],
-  'import/no-cycle': [
-    'off'
-  ],
   'function-paren-newline': [
     'off'
   ],
   'object-curly-newline': [
-    'off'
-  ],
-  'no-multiple-empty-lines': [
     'off'
   ],
   'prefer-object-spread': [
@@ -94,14 +69,12 @@ const todo = {
   'function-call-argument-newline': [
     'off'
   ],
-  'no-unneeded-ternary': [
-    'off'
-  ],
-  'semi-style': [
-    'off'
-  ],
   'lines-between-class-members': [
-    'off'
+    'error',
+    'always',
+    {
+      'exceptAfterSingleLine': true
+    }
   ],
   'react/jsx-curly-newline': [
     'off'
@@ -115,25 +88,10 @@ const todo = {
   'react/jsx-one-expression-per-line': [
     'off'
   ],
-  'react/jsx-fragments': [
-    'off'
-  ],
-  'react/jsx-curly-brace-presence': [
-    'off'
-  ],
   'react/jsx-closing-tag-location': [
     'off'
   ],
-  'react/jsx-no-useless-fragment': [
-    'off'
-  ],
-  'react/no-unused-state': [
-    'off'
-  ],
   'react/forbid-foreign-prop-types': [
-    'off'
-  ],
-  'react/no-deprecated': [
     'off'
   ],
 };
@@ -157,9 +115,6 @@ module.exports = {
       // turned off otherwise non-admin modules will complain about importing components from admin
       // via the novel silverstripe js component sharing setup
       'import/no-extraneous-dependencies': [
-        'off'
-      ],
-      'import/no-unresolved': [
         'off'
       ],
       // turned off because the PHP side returns dangling properties which trigger this...
@@ -192,13 +147,10 @@ module.exports = {
         'off'
       ],
       'react/prefer-stateless-function': [
-        'off',
+        'error',
         { 'ignorePureComponents': true }
       ],
       'import/prefer-default-export': [
-        'off'
-      ],
-      'import/first': [
         'off'
       ],
       'class-methods-use-this': [
@@ -206,11 +158,6 @@ module.exports = {
       ],
       // this one makes no sense in some regex contexts
       'no-useless-escape': [
-        'off'
-      ],
-      // these accessibility rules will be a detriment to existing code/styles,
-      // perhaps in the future
-      'jsx-a11y/href-no-hash': [
         'off'
       ],
       'jsx-a11y/iframe-has-title': [
@@ -255,16 +202,7 @@ module.exports = {
       'react/button-has-type': [
         'off'
       ],
-      'react/no-array-index-key': [
-        'off'
-      ],
-      'react/jsx-indent': [
-        'off'
-      ],
       'react/sort-comp': [
-        'off'
-      ],
-      'react/no-unused-prop-types': [
         'off'
       ],
       'react/no-unused-class-component-methods': [
