@@ -1,6 +1,6 @@
 {
 	"name": "@silverstripe/eslint-config",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "SilverStripe config files for eslint",
 	"engines": {
 		"node": ">=18.x"
