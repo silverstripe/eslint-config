@@ -1,5 +1,4 @@
 module.exports = {
-    'defaultSeverity': 'warning',
     'extends': [
         'stylelint-config-recommended-scss',
         'stylelint-config-sass-guidelines',
@@ -8,6 +7,8 @@ module.exports = {
     'plugins': [
         'stylelint-scss'
     ],
+    // Ignore anything that isn't one of these file types
+    'ignoreFiles': ['**/!(*.{css,scss,sass})'],
     'rules': {
         // Line Spacing
         'rule-empty-line-before': [
@@ -31,7 +32,7 @@ module.exports = {
             }
         ],
         'selector-max-id': 2,
-        'selector-max-compound-selectors': 5,
+        'selector-max-compound-selectors': 6,
         'selector-pseudo-element-colon-notation': 'single',
         'no-descending-specificity': [
             true,
@@ -42,7 +43,7 @@ module.exports = {
             }
         ],
         'max-nesting-depth': [
-            3,
+            4,
             {
                 'ignore': [
                     'blockless-at-rules',
@@ -73,7 +74,31 @@ module.exports = {
                 ]
             }
         ],
-
+        'at-rule-no-unknown': [
+            true,
+            {
+                // Allow sass at-rules - see https://sass-lang.com/documentation/at-rules/
+                'ignoreAtRules': [
+                    'at-root',
+                    'debug',
+                    'each',
+                    'else',
+                    'error',
+                    'extend',
+                    'for',
+                    'forward',
+                    'function',
+                    'if',
+                    'import',
+                    'include',
+                    'mixin',
+                    'return',
+                    'use',
+                    'warn',
+                    'while',
+                ]
+            }
+        ],
         'comment-no-empty': true,
         'declaration-block-no-duplicate-properties': true,
         'no-irregular-whitespace': true,
@@ -86,14 +111,21 @@ module.exports = {
             }
         ],
         'font-family-name-quotes': 'always-unless-keyword',
-        // Turn off rules 
+        // Turn off rules
         'selector-class-pattern': null,
+        'selector-id-pattern': null,
         'function-no-unknown': null,
         'property-no-vendor-prefix': null,
         'value-no-vendor-prefix': null,
         'font-family-no-missing-generic-family-keyword': null,
         'scss/dollar-variable-colon-space-after': null,
         'scss/no-global-function-names': null,
-        'value-keyword-case': null
+        'value-keyword-case': null,
+        'media-query-no-invalid': null,
+        'selector-id-pattern': null,
+        'keyframes-name-pattern': null,
+        'scss/dollar-variable-pattern': null,
+        'scss/at-extend-no-missing-placeholder': null,
+        'no-descending-specificity': null,
     }
 };
