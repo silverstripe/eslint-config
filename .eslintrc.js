@@ -102,6 +102,11 @@ module.exports = {
     'jasmine': true,
     'browser': true
   },
+  // Allows null coalescing and optional chaining operators.
+  // Airbnb uses ecmaVersion 2018
+  'parserOptions': {
+    'ecmaVersion': 2020
+  },
   'root': true,
   'rules': Object.assign({},
     todo,
