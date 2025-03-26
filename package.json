@@ -1,6 +1,6 @@
 {
 	"name": "@silverstripe/eslint-config",
-	"version": "1.4.0",
+	"version": "1.5.1",
 	"description": "SilverStripe config files for eslint",
 	"engines": {
 		"node": ">=18.x"
@@ -29,7 +29,7 @@
 	"dependencies": {
 		"eslint": "^8.26.0",
 		"eslint-config-airbnb": "^19.0.4",
-		"eslint-config-airbnb-base": "^15.1.0",
+		"eslint-config-airbnb-base": "^15.0.0",
 		"eslint-plugin-import": "^2.26.0",
 		"eslint-plugin-jsx-a11y": "^6.6.1",
 		"eslint-plugin-react": "^7.31.10",
