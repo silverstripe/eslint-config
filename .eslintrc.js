@@ -162,7 +162,7 @@ module.exports = {
         'off'
       ],
       // This overrides the airbnb rule to allow for..of loops
-      // https://github.com/airbnb/javascript/blob/eslint-config-airbnb-v15.1.0/packages/eslint-config-airbnb-base/rules/style.js#L267
+      // https://github.com/airbnb/javascript/blob/eslint-config-airbnb-v15.0.0/packages/eslint-config-airbnb-base/rules/style.js#L257
       // "ForOfStatement" has been removed in the list list below
       'no-restricted-syntax': [
         'error',
